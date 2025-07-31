@@ -15,7 +15,7 @@ sc= pickle.load(open('sc.pkl', 'rb'))
 
 # Streamlit UI
 
-st.set_page_config(page_title="Customer Churn Predictor", page_icon="🏏", layout="centered")
+st.set_page_config(page_title="Customer Churn Predictor", page_icon="📋", layout="centered")
 
 st.title("📋 Crustomer Churn Predictor")
 #st.markdown("### Welcome to your Crustomer Churn Predictor!")
@@ -86,3 +86,24 @@ if st.button('Predict'):
         st.header('The customer is likely to churn!')
     else:    
         st.header('The customer is not likely to churn!')
+
+
+st.markdown(
+    """
+    <style>
+        .footer {
+            position: fixed;
+            left: 0;
+            bottom: 5px;
+            width: 100%;
+            text-align: center;
+            font-size: 13px;
+            opacity: 0.4;
+        }
+    </style>
+    <div class="footer">
+        Babuaa ;)
+    </div>
+    """,
+    unsafe_allow_html=True
+)
