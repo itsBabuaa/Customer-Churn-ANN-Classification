@@ -2,9 +2,9 @@
 
 An advanced deep learning-powered web application that predicts whether a customer is likely to churn using an Artificial Neural Network (ANN) model.
 
--✅ Binary Classification
--✅ Trained on Customer Churn Data
--✅ Built with TensorFlow and Streamlit
+✅ Binary Classification
+✅ Trained on Customer Churn Data
+✅ Built with TensorFlow and Streamlit
 
 Built with Python and Streamlit, the app enables businesses to understand churn behavior and act proactively.
 
