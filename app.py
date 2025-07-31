@@ -73,12 +73,12 @@ input_data= pd.concat([geo_encoded_df, input_data.reset_index(drop= True)], axis
 # Scale the input data
 input_scaled= sc.transform(input_data)
 
+
 # Prediction
-prediction= model.predict(input_scaled)
-prediction_proba= prediction[0][0]
-
-
 if st.button('Predict'):
+
+    prediction= model.predict(input_scaled)
+    prediction_proba= prediction[0][0]
     
     st.header(f'Churn Probability: {round(prediction_proba *100)}%')
 
